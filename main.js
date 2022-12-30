@@ -32,7 +32,7 @@ function loadImage() {
     shuttleImage = new Image()
     shuttleIMage = "images/shuttle.png"
 }
-
+//render draws image but only once
 function render() {
     ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height)
     ctx.drawImage(shuttleImage, shuttleX, shuttleY)
@@ -41,7 +41,7 @@ function render() {
 
 function main() {
     render()
-    requestAnimationFrame(main)
+    requestAnimationFrame(main) //this will continually draw so images wont disappear right away
 }
 
 loadImage()
