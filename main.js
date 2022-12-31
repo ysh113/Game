@@ -22,20 +22,20 @@ let shuttleY = canvas.height-60
 function loadImage() {
     backgroundImage = new Image()
     backgroundImage.src = "images/background.jpg"
-;
+
     bulletImage = new Image()
     bulletImage.src = "images/bullet.png"
 
     enemyImage = new Image()
-    enemyImage = "images/enemy.png"
+    enemyImage.src = "images/enemy.png"
 
     shuttleImage = new Image()
-    shuttleIMage = "images/shuttle.png"
+    shuttleImage.src = "images/shuttle.png"
 }
 //render draws image but only once
 function render() {
-    ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height)
-    ctx.drawImage(shuttleImage, shuttleX, shuttleY)
+    ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+    ctx.drawImage(shuttleImage, shuttleX, shuttleY);
 }
 
 
